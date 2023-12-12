@@ -1285,7 +1285,7 @@ class PluginSinglesignonProvider extends CommonDBTM {
                   $profile   = new Profile_User();
                   $userProfile['users_id'] = intval($user->fields['id']);
                   $userProfile['entities_id'] = intval($entitie);
-                  $userProfile['is_recursive'] = 0;
+                  $userProfile['is_recursive'] = 1;
                   $userProfile['profiles_id'] = intval($profils);
                   $userProfile['add'] = "Ajouter";
                   $profile->add($userProfile);
